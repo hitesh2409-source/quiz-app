@@ -3,7 +3,7 @@ const CATEGORIES = ["All", "React", "JavaScript", "HTML/CSS"];
 function StartScreen({ totalQuestions, category, onCategoryChange, onStart }) {
   return (
     <div className="card center">
-      <h1>⚡ React Quiz</h1>
+      <h1> WebDev Quiz</h1>
       <p className="muted">
         Test your web development knowledge with multiple-choice questions.
       </p>
