@@ -1,10 +1,13 @@
-function Option({ text, isSelected, onSelect }) {
+const LETTERS = ["A", "B", "C", "D"];
+
+function Option({ text, index, isSelected, onSelect }) {
   return (
     <button
       className={`option ${isSelected ? "selected" : ""}`}
       onClick={onSelect}
     >
-      {text}
+      <span className="letter">{LETTERS[index]}</span>
+      <span>{text}</span>
     </button>
   );
 }
